@@ -7,7 +7,7 @@
     "check-types": "tsc -b",
     "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
     "dev": "bun run --hot src/index.ts",
-    "start": "bun run dist/index.js",
+    "start": "bun run dist/index.mjs",
     "db:push": "pnpm --filter @my-better-t-app/db run db:push"
   },
   "dependencies": {
