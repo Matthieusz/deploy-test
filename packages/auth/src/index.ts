@@ -18,5 +18,10 @@ export const auth = betterAuth<BetterAuthOptions>({
       enabled: true,
       domain: ".informati.dev",
     },
+    defaultCookieAttributes: {
+      secure: process.env.NODE_ENV === "production",
+      httpOnly: true,
+      sameSite: "none",
+    },
   },
 });
